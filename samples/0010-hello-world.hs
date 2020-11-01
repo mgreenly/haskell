@@ -1,17 +1,26 @@
--- The least interesting Haskell program ever.
+-- The obligator "hello world" program
 --
--- To run it with the interpreter
+--
+-- To run the file via the ghc interpreter use 'runghc'
 --
 --    runghc 0010-hello-world.hs
 --
--- To compile and run it
+--
+-- To load the file into the repl use 'ghci'
+--
+--   ghci 0010-hello-world.hs
+--
+--
+-- To compile to a binary and run it use 'ghc'
 --
 --    ghc 0010-hello-world.hs
 --    ./hellworld.hs
 --
--- To run it in the repl
 --
---   ghci 0010-hello-world.hs
+--
+-- I find running small single file experiments the best way to learn haskell when you're first starting.  I recomend
+-- creating two shortcuts for yourself in your editor if possible.  One to run the current file with 'runghc' and one
+-- to load the current file into the repl with 'ghci'.
 --
 
 main = putStrLn "Hello world!"

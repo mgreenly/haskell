@@ -3,9 +3,11 @@
 -- us if we ask it with `deriving Show` in the type definition.
 --
 
-data Point = MkPoint Integer Integer deriving Show
+data Point =
+    Point Integer Integer
+    deriving Show
 
 
 main = do
-    let point = MkPoint 7 11
-    putStrLn(show point)
+    let point = Point 5 7
+    print point
