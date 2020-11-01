@@ -9,4 +9,3 @@ data Point = MkPoint Integer Integer deriving Show
 main = do
     let point = MkPoint 7 11
     putStrLn(show point)
-
