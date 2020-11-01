@@ -3,31 +3,33 @@
 --
 
 --
--- The most fundemental kind of list is an emtpy one.  It's expressed as an empty pair of square brackets.
+-- The most fundemental kind of list is an empty one.  It's expressed as an empty pair of square brackets.
 --
 emptyList = []
 
 -- The single colon is the cons operator.  It will prepend a value to an empty list.
 oneElementList = 1 : []
 
--- the : operator will also append a value to a non empty list.  So you can build up a longer list
+-- the (:) operator will also append a value to a non empty list.  So you can build up a longer list
 threeElementList = 1 : 2 : 3 : []
 
--- keep in mind that the 'c' was the first thing added to the list and the 'a' was the last thing added to the list
+-- Lists in haskell are traditional singly linked lists.  So keep in mind that the 3 was the first thing
+-- added to the list and the 1 was the last thing added to the list.
 
--- It's important to understand the : operator works because we use it when deconstructing lists but normally you'd
--- create a list with this syntax.  Square brackets with comma separated values.
+-- It's important to understand the syntax of the (:) operator because you will use it while destructuring lists
+-- but normally when creating an immediate list you'll use this syntax to create a list.
 
-altList = [ 1, 2, 3 ]
-
+otherList = [ 1, 2, 3 ]
 
 
 main = do
     print oneElementList                 -- [1]
     print threeElementList               -- [1,2,3]
-    print altList                        -- [1,2,3]
+    print otherList                      -- [1,2,3]
 
-    -- you can test if a list is empty print (null emptyList)               -- True print (null threeElementList)        -- False
+    -- you can test if a list is empty
+    print (null emptyList)               -- True
+    print (null threeElementList)        -- False
 
     -- you can get the the length of a list
     print (length threeElementList)      -- 3
