@@ -1,5 +1,3 @@
+# ignore everything excep *.hs files
 *
-!/**/
-!*.*
-*.hi
-*.o
+!/**/.hs
