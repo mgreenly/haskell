@@ -1,4 +1,4 @@
--- The obligator "hello world" program
+-- The obligatory "hello world" program
 --
 --
 -- To run the file via the ghc interpreter use 'runghc'
@@ -18,8 +18,8 @@
 --
 --
 --
--- I find running small single file experiments the best way to learn haskell when you're first starting.  I recomend
--- creating two shortcuts for yourself in your editor if possible.  One to run the current file with 'runghc' and one
+-- When you're first starting I find that running small single file experiements is the best way to learn.  Create two
+-- shortcuts for yourself in your editor if possible.  One to run the current file with 'runghc' and one
 -- to load the current file into the repl with 'ghci'.
 --
 
