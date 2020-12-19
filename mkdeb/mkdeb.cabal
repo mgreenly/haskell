@@ -1,0 +1,23 @@
+cabal-version:       >=1.10
+name:                mkdeb
+-- PVP summary:      +-+------- breaking API changes
+--                   | | +----- non-breaking API additions
+--                   | | | +--- code changes with no API change
+version:             0.1.0.0
+synopsis:            Simple tool for creating *.deb files
+homepage:            https://github.com/mgreenly/mkdeb
+license:             BSD3
+license-file:        LICENSE
+author:              Michael Greenly
+maintainer:          michaelgreenly@logic-refinery.com
+build-type:          Simple
+extra-source-files:  CHANGELOG.md
+
+
+executable mkdeb
+  main-is:             Main.hs
+  build-depends:       base >=4.14 && <4.15,
+                       optparse-applicative,
+                       process
+  default-language:    Haskell2010
+
