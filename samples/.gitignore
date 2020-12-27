@@ -1,3 +1,5 @@
-# ignore everything excep *.hs files
+# ignore everything
 *
+# except this stuff
+!/Makefile
 !/*.hs
